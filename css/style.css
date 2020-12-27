@@ -7,6 +7,7 @@
   font-family: Poppins, sans-serif; }
 
 .section-cards {
+  background: #fafafa;
   width: 100%;
   height: fit-content;
   padding: 20% 8% 12%; }
@@ -85,7 +86,6 @@
 
 @media (min-width: 750px) {
   .section-cards {
-    background: #fafafa;
     padding: 10% 8% 2%; }
 
   .header-card {
