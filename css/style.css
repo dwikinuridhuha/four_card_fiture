@@ -1,0 +1,259 @@
+/* MOBILE FIRST */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+p {
+  color: #a3a5ae;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.cards-section {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 8.4rem 2.4rem 5.5rem;
+  font-size: 1.5rem;
+}
+
+.card-heading {
+  width: 95%;
+  max-width: 42rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.heading {
+  font-weight: 200;
+  font-size: 2.4rem;
+}
+
+.heading-bold {
+  padding-bottom: 1.5rem;
+  font-size: 2.4rem;
+}
+
+.card-heading p {
+  line-height: 2.6rem;
+}
+
+.cards {
+  width: 100%;
+  margin-top: 7.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0.8rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 41rem;
+  height: 22rem;
+  border-radius: 1rem;
+  margin-bottom: 2.6rem;
+  -webkit-box-shadow: 0rem 1.2rem 1.6rem -0.3rem #dee5ef;
+          box-shadow: 0rem 1.2rem 1.6rem -0.3rem #dee5ef;
+  overflow: hidden;
+  position: relative;
+}
+
+.overline {
+  width: 100%;
+  height: 0.4rem;
+  position: absolute;
+}
+
+.cyan {
+  background: #45d3d3;
+}
+
+.red {
+  background: #ea5353;
+}
+
+.orange {
+  background: #fcaf4a;
+}
+
+.blue {
+  background: #549ef2;
+}
+
+.cyan, .red, .orange, .blue {
+  z-index: 1;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 2.8rem;
+  position: relative;
+  background: #fff;
+}
+
+.inner h3 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.inner p {
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+}
+
+.icon {
+  position: absolute;
+  bottom: 2rem;
+  right: 2.8rem;
+}
+
+.icon img {
+  width: 5.7rem;
+  height: 5.7rem;
+}
+
+/* MEDIA QUERIES FOR TABLET AND DESKTOP */
+@media (min-width: 750px) {
+  .cards-section {
+    background: #fafafa;
+  }
+  .card-heading {
+    width: 44%;
+  }
+  .cards {
+    padding-bottom: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    place-items: start center;
+    padding: 0 2rem;
+    margin: initial auto;
+    gap: 0rem 3rem;
+  }
+  .card {
+    height: 18rem;
+  }
+  .card:nth-child(1) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .card:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .card:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .card:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  .card {
+    height: 21rem;
+  }
+}
+
+@media (min-height: 805px) and (max-width: 1198px) {
+  .cards-section {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards {
+    padding: 0 9%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-section {
+    padding: 7.4rem 2.4rem 5.2rem;
+  }
+  .card-heading {
+    max-width: 50rem;
+  }
+  .card-heading p {
+    width: 54rem;
+    font-size: 1.5rem;
+  }
+  .heading {
+    font-size: 3.6rem;
+  }
+  .heading-bold {
+    font-size: 3.6rem;
+  }
+  .cards {
+    padding: 0 10%;
+    margin-top: 5.6rem;
+  }
+  .card {
+    height: 24.5rem;
+  }
+  .inner {
+    padding: 3rem;
+  }
+  .inner .icon {
+    bottom: 2.8rem;
+    right: 3.2rem;
+  }
+  .inner .icon img {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
